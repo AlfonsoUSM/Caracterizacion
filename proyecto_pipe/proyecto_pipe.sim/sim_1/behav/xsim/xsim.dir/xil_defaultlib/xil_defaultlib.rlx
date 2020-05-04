@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/input_interface.sv,1588547146,systemVerilog,,C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/output_interface.sv,,input_interface,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/output_interface.sv,1588542629,systemVerilog,,C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/piso_reg.sv,,output_interface,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/piso_reg.sv,1588540135,systemVerilog,,C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv,,piso_reg,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv,1588548121,systemVerilog,,C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/sipo_reg.sv,,processing_unit,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/sipo_reg.sv,1588549421,systemVerilog,,C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_rx.sv,,sipo_reg,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv,1588549067,systemVerilog,,,,topmodule,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_rx.sv,1588528706,systemVerilog,,C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_tx.sv,,uart_rx,,,,,,,,
+C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_tx.sv,1588528685,systemVerilog,,C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv,,uart_tx,,,,,,,,

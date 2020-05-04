@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May  3 20:05:16 2020
+# Process ID: 1252
+# Current directory: C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.runs/synth_1
+# Command line: vivado.exe -log topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
+# Log file: C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.runs/synth_1/topmodule.vds
+# Journal file: C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topmodule.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 355.410 ; gain = 52.867
+Command: synth_design -top topmodule -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16092 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 809.594 ; gain = 177.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'topmodule' [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv:23]
+	Parameter NBYTES bound to: 12 - type: integer 
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv:44]
+INFO: [Synth 8-6157] synthesizing module 'input_interface' [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/input_interface.sv:40]
+	Parameter NBYTES bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_rx.sv:40]
+	Parameter CLKS_PER_BIT bound to: 100 - type: integer 
+	Parameter s_IDLE bound to: 3'b000 
+	Parameter s_RX_START_BIT bound to: 3'b001 
+	Parameter s_RX_DATA_BITS bound to: 3'b010 
+	Parameter s_RX_STOP_BIT bound to: 3'b011 
+	Parameter s_CLEANUP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (1#1) [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_rx.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'input_interface' (2#1) [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/input_interface.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'sipo_reg' [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/sipo_reg.sv:34]
+	Parameter NBYTES bound to: 12 - type: integer 
+ERROR: [Synth 8-359] invalid assignment pattern [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/sipo_reg.sv:47]
+ERROR: [Synth 8-6156] failed synthesizing module 'sipo_reg' [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/sipo_reg.sv:34]
+ERROR: [Synth 8-6156] failed synthesizing module 'topmodule' [C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 873.648 ; gain = 241.758
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sun May  3 20:08:55 2020...
