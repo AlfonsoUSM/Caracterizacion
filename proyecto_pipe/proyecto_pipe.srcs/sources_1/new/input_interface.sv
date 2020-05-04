@@ -118,13 +118,11 @@ module input_interface #(parameter NBYTES = 1024)(
                     shift = 1'b1;
                     if (count == (NBYTES - 1)) begin
                         next_count = 10'b0;
-                        //next_state = IDLE;
-                        next_state = PROCESS;          // quitar
-                        next_pro_control = {1'b1, rx_byte[2:0]};   // quitar
+                        next_state = IDLE;
                         if (AorB == 1'b0)
                             next_ready[0] = 1'b1;
                         else
-                            next_ready[1] = 1'b0;
+                            next_ready[1] = 1'b1;
                     end
                     else
                         next_count = count + 10'd1;
@@ -133,7 +131,7 @@ module input_interface #(parameter NBYTES = 1024)(
             PROCESS: begin
                 if (pro_done == 1'b1) begin
                     next_state = SEND;         
-                    next_t_control[1] = 1'b1;  
+                    next_t_control = {1'b1, pro_control[2]}; // start transmission & result size (type vector or scalar)  
                     next_pro_control = 4'd0;
                 end
             end

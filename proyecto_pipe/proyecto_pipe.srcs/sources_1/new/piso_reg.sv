@@ -37,17 +37,18 @@ module piso_reg #(parameter NBYTES = 1024)(
     input reset,
     input set,
     input shift,
-    input [(NBYTES - 1):0][7:0] in,
+    input [7:0] in [(NBYTES - 1):0],
     output [7:0] out
     );
     
-    logic [(NBYTES - 1):0][7:0] preg, next_preg;
+    logic [7:0] preg[(NBYTES - 1):0];
+    logic [7:0] next_preg[(NBYTES - 1):0];
     
     assign out = preg[0][7:0];
     
     always_ff @ (posedge clk) begin
         if (reset == 1'b1) begin
-            preg <= '{8'b0};
+            preg <= '{default:8'b0};
         end
         else begin
             preg <= next_preg;
@@ -58,8 +59,10 @@ module piso_reg #(parameter NBYTES = 1024)(
         if (set == 1'b1)
             next_preg = in;
         else begin
-            if (shift == 1'b1)
-                next_preg = {preg[0], preg[(NBYTES - 1):1]};
+            if (shift == 1'b1) begin
+                next_preg[(NBYTES - 1)] = preg[0];
+                next_preg[(NBYTES - 2):0] = preg[(NBYTES - 1):1];
+            end
             else
                 next_preg = preg;
         end 

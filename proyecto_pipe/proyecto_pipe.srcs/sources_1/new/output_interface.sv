@@ -45,10 +45,14 @@ module output_interface #(parameter NBYTES = 1024)(
     output done
     );
     
+    
+    localparam NBYTES2 = 4;
+    
     enum logic [1:0] {IDLE, SEND, TWAIT} state, next_state;
     
     logic tx_send, tx_flag;
     logic ready, reg_shift;
+    logic [9:0] max;
     logic [9:0] count, next_count;
     
     assign shift = reg_shift;
@@ -71,6 +75,10 @@ module output_interface #(parameter NBYTES = 1024)(
         tx_send = 1'b0;
         reg_shift = 1'b0;
         ready = 1'b0;
+        if (size == 1'b1)       // vector type result
+            max = NBYTES - 1;
+        else                    // scalar type result
+            max = NBYTES2 - 1;
         case (state)
             IDLE: begin
                 if (start == 1'b1)
@@ -83,7 +91,7 @@ module output_interface #(parameter NBYTES = 1024)(
             end
             TWAIT: begin
                 if (tx_flag == 1'b1) begin
-                    if (count == (NBYTES - 1)) begin
+                    if (count == max) begin
                         next_state = IDLE;
                         next_count = 10'd0;
                         ready = 1'b1;

@@ -40,19 +40,31 @@ module processing_unit #(parameter NBYTES = 1024)(
     input reset,
     input start,
     input [2:0] control,
-    input [(NBYTES - 1):0][7:0] vectorA,
-    input [(NBYTES - 1):0][7:0] vectorB,
-    output [(NBYTES - 1):0][7:0] result,
+    input [7:0] vectorA [(NBYTES - 1):0],
+    input [7:0] vectorB [(NBYTES - 1):0],
+    output [7:0] result [(NBYTES - 1):0],
     output set,
     output done
     );
     
+    localparam NBYTES2 = 2;
+    
+    localparam READA = 2'b00;
+    localparam READB = 2'b01;
+    localparam SUMVEC = 2'b10;
+    localparam AVGVEC = 2'b11; 
     
     enum logic {IDLE, PROCESS} state, next_state;
     logic store, ready;
+    logic [7:0] vectorC [(NBYTES - 1):0];
+    logic [7:0] sumVector [(NBYTES - 1):0];
+    logic [7:0] avgVector [(NBYTES - 1):0];
+    
+    assign sumVector = '{default:8'b0};
+    assign avgVector = '{default:8'b0}; 
     
     assign set = store;
-    assign result = vectorB;
+    assign result = vectorC;
     assign done = ready;
     
     always_ff @ (posedge clk) begin
@@ -68,6 +80,7 @@ module processing_unit #(parameter NBYTES = 1024)(
         next_state = state;
         store = 1'b0;
         ready = 1'b0;
+        vectorC = '{default:8'b0};
         case (state) 
             IDLE: begin
                 if (start == 1'b1)
@@ -76,6 +89,22 @@ module processing_unit #(parameter NBYTES = 1024)(
                     ready = 1'b1;
             end
             PROCESS: begin
+                if(control[2] == 1) begin // vector type result operations
+                    case(control[1:0])
+                        READA:
+                            vectorC = vectorA;
+                        READB:
+                            vectorC = vectorB;
+                        SUMVEC:
+                            vectorC = sumVector;
+                        AVGVEC:
+                            vectorC = avgVector;
+                    endcase
+                end
+                else begin // Manhattan distance
+                    vectorC[(NBYTES2 - 1):0] = '{default:8'b1};
+                    vectorC[(NBYTES - 1):NBYTES2] = '{default:8'b0};
+                end 
                 next_state = IDLE; 
                 store = 1'b1;
                 ready = 1'b1;

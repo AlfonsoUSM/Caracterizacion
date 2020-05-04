@@ -36,23 +36,26 @@ module sipo_reg #(parameter NBYTES = 1024)(
     input reset,
     input shift,
     input [7:0] in,
-    output [(NBYTES - 1):0][7:0] out
+    output [7:0] out [(NBYTES - 1):0]
     );
     
     
-    logic [(NBYTES - 1):0][7:0] preg, next_preg;
+    logic [7:0] preg [(NBYTES - 1):0];
+    logic [7:0] next_preg [(NBYTES - 1):0];
     assign out = preg;
     
     always_ff @ (posedge clk) begin
         if (reset == 1'b1)
-            preg <= '{8'b0};
+            preg <= '{default:8'b0};
         else
             preg <= next_preg;
     end
     
     always_comb begin
-        if (shift == 1'b1)
-            next_preg = {in, preg[(NBYTES - 1):1]};
+        if (shift == 1'b1) begin
+            next_preg[(NBYTES - 1)] = in;
+            next_preg[(NBYTES - 2):0] = preg[(NBYTES - 1):1];
+        end
         else
             next_preg = preg;
     end

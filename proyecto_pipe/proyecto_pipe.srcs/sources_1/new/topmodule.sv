@@ -36,9 +36,11 @@ module topmodule(
     
     assign JA1 = UART_TXD_IN;
     assign JA2 = UART_RXD_OUT;
-    assign LED16_B = vec_ready[1];
-    assign LED17_B = vec_ready[0];
+    assign LED16_B = vec_ready[0];
+    assign LED17_B = vec_ready[1];
     
+    /*
+    // simulacion
     logic CLK, RESET, uart_rx;
     
     always #5 CLK = ~CLK;
@@ -338,65 +340,25 @@ module topmodule(
         uart_rx = 1'b1; //stop
         #1000;
     end
-    
-    /*
-    logic SH, SE, SH2;
-    logic [7:0] IN;
-    
-    always #5 CLK = ~CLK;
-    
-    initial begin
-        CLK = 1'b1;
-        RESET = 1'b0;
-        SH = 1'b0;
-        SE = 1'b0;
-        SH2 = 1'b1;
-        IN = 8'b01010101;
-        #6;
-        RESET = 1'b1;
-        #6;
-        RESET = 1'b0;
-        #4;
-        SH = 1'b1;
-        #10;
-        IN = 8'b00001111;
-        #10;
-        IN = 8'b11110000;
-        SE = 1'b1;
-        #10;
-        IN = 8'b11001100;
-        SE = 1'b0;
-        #10;
-        IN = 8'b00001111;
-        #20;
-        IN = 8'b11001100;
-        #10;
-        SH = 1'b0;
-        #10;
-        SE = 1'b1;
-        #10;
-        SE = 1'b0;
-        #20;
-        SH2 = 1'b0;        
-    end
     */
     
     logic serCLK, proCLK, reset;
-    assign proCLK = CLK; //CLK100MHZ;
-    assign serCLK = CLK; //CLK100MHZ;
-    assign reset = RESET; //~CPU_RESETN;
+    assign proCLK = CLK100MHZ; //CLK;
+    assign serCLK = CLK100MHZ; //CLK;
+    assign reset = ~CPU_RESETN; //RESET;
     
     logic shiftA, shiftB;
     logic pro_done, t_done;
     logic [1:0] t_ctrl;
     logic [3:0] pro_ctrl;
     logic [7:0] write_byte, read_byte;
-    logic [(NBYTES - 1):0][7:0] vectorA, vectorB;
+    logic [7:0] vectorA [(NBYTES - 1):0];
+    logic [7:0] vectorB [(NBYTES - 1):0];
     
     input_interface #(.NBYTES (NBYTES)) input_instance (
         .clk(serCLK),             // 1 bit Input : clock signal
         .reset(reset),           // 1 bit Input : cpu reset
-        .rx_serial(uart_rx),       // 1 bit Input : serial receive
+        .rx_serial(UART_TXD_IN),       // 1 bit Input : serial receive
         .pro_done(pro_done),        // 1 bit Input : result ready
         .t_done(t_done),          // 1 bit Input : result trsnmission done
         .shiftA(shiftA),            // 1 bit Output : enable BRAM_A write
@@ -424,7 +386,7 @@ module topmodule(
     );
         
     logic set;
-    logic [(NBYTES - 1):0][7:0] result;
+    logic [7:0] result [(NBYTES - 1):0];
     
     processing_unit  #(.NBYTES (NBYTES)) coprocessor (
         .clk(proCLK),             // 1 bit Input : input clock

@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/xsim.dir/topmodule_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun May  3 19:48:03 2020" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun May  3 20:56:32 2020" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2552052" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "b8e8b3ac-6395-4e42-941d-d4c7bad9673a" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "814af902cebb4554b7612798df9b8da7" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "46" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "48" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz" -context "user_environment"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "280 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.14_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7680_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 678842286 -regid "" -xml C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/xsim.dir/topmodule_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/xsim.dir/topmodule_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/xsim.dir/topmodule_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.17_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7716_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 257127480 -regid "" -xml C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/xsim.dir/topmodule_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/xsim.dir/topmodule_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.sim/sim_1/behav/xsim/xsim.dir/topmodule_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
