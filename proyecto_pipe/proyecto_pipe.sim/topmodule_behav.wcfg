@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="topmodule_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="topmodule" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="191914800000fs"></ZoomStartTime>
+      <ZoomEndTime time="285914800001fs"></ZoomEndTime>
+      <Cursor1Time time="148995400000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <ValueColumnWidth column_width="239"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/topmodule/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/input_instance/rx_flag" type="logic">
+      <obj_property name="ElementShortName">rx_flag</obj_property>
+      <obj_property name="ObjectShortName">rx_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/input_instance/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/shiftA" type="logic">
+      <obj_property name="ElementShortName">shiftA</obj_property>
+      <obj_property name="ObjectShortName">shiftA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/shiftB" type="logic">
+      <obj_property name="ElementShortName">shiftB</obj_property>
+      <obj_property name="ObjectShortName">shiftB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/write_byte" type="array">
+      <obj_property name="ElementShortName">write_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/vectorA" type="array">
+      <obj_property name="ElementShortName">vectorA[11:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">vectorA[11:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/vectorB" type="array">
+      <obj_property name="ElementShortName">vectorB[11:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">vectorB[11:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/pro_ctrl" type="array">
+      <obj_property name="ElementShortName">pro_ctrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pro_ctrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/pro_done" type="logic">
+      <obj_property name="ElementShortName">pro_done</obj_property>
+      <obj_property name="ObjectShortName">pro_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/set" type="logic">
+      <obj_property name="ElementShortName">set</obj_property>
+      <obj_property name="ObjectShortName">set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/vectC_piso/preg" type="array">
+      <obj_property name="ElementShortName">preg[11:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">preg[11:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/t_ctrl" type="array">
+      <obj_property name="ElementShortName">t_ctrl[1:0]</obj_property>
+      <obj_property name="ObjectShortName">t_ctrl[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/shiftC" type="logic">
+      <obj_property name="ElementShortName">shiftC</obj_property>
+      <obj_property name="ObjectShortName">shiftC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/read_byte" type="array">
+      <obj_property name="ElementShortName">read_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">read_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/output_instance/tx_send" type="logic">
+      <obj_property name="ElementShortName">tx_send</obj_property>
+      <obj_property name="ObjectShortName">tx_send</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/output_instance/tx_flag" type="logic">
+      <obj_property name="ElementShortName">tx_flag</obj_property>
+      <obj_property name="ObjectShortName">tx_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/t_done" type="logic">
+      <obj_property name="ElementShortName">t_done</obj_property>
+      <obj_property name="ObjectShortName">t_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/NBYTES" type="array">
+      <obj_property name="ElementShortName">NBYTES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NBYTES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/LED16_B" type="logic">
+      <obj_property name="ElementShortName">LED16_B</obj_property>
+      <obj_property name="ObjectShortName">LED16_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/LED17_B" type="logic">
+      <obj_property name="ElementShortName">LED17_B</obj_property>
+      <obj_property name="ObjectShortName">LED17_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/topmodule/vec_ready" type="array">
+      <obj_property name="ElementShortName">vec_ready[1:0]</obj_property>
+      <obj_property name="ObjectShortName">vec_ready[1:0]</obj_property>
+   </wvobject>
+</wave_config>
