@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1588559638">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1589046735">
   <File Type="PA-TCL" Name="topmodule.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="topmodule_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="topmodule_reports.tcl"/>
@@ -11,6 +11,13 @@
   <File Type="VDS-TIMING-PB" Name="topmodule_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/combo_adder_tree.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/input_interface.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -19,6 +26,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/output_interface.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pipe_adder_tree.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
