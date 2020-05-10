@@ -119,30 +119,6 @@ module processing_unit #(parameter NBYTES = 1024)(
         .out(manDist)
         );
     
-    genvar k;
-    generate
-        for ( k = 0; k < NBYTES; k = k + 1) begin: sum_loop
-            assign sumVector[k] = vectorA[k] + vectorB[k];
-            assign avgVector[k] = sumVector[k] >> 1;
-            assign difVector[k] = (vectorA[k] > vectorB[k]) ? vectorA[k] - vectorB[k] : vectorB[k] - vectorA[k];
-        end
-    endgenerate
-    
-    logic [(7 + $clog2(NBYTES)):0] manDist;
-    logic [(7 + $clog2(NBYTES)):0] manDist2;
-    
-    pipe_adder_tree #(.NBYTES(NBYTES)) pipe_adder (
-        .clk(clk),
-        .reset(reset),
-        .inVector(difVector),
-        .out(manDist2)
-        );
-        
-    combo_adder_tree #(.NBYTES(NBYTES)) combo_adder (
-        .inVector(difVector),
-        .out(manDist)
-        );
-    
     always_comb begin
         next_state = state;
         store = 1'b0;
