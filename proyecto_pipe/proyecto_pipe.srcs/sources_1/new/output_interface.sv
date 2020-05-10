@@ -46,7 +46,7 @@ module output_interface #(parameter NBYTES = 1024)(
     );
     
     
-    localparam NBYTES2 = 4;
+    localparam NBYTES2 = 3;
     
     enum logic [1:0] {IDLE, SEND, TWAIT} state, next_state;
     
