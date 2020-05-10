@@ -64,12 +64,9 @@ module processing_unit #(parameter NBYTES = 1024)(
     logic [7:0] avgVector [(NBYTES - 1):0];
     logic [7:0] difVector [(NBYTES - 1):0];
     
-<<<<<<< HEAD
     logic [COUNTER_SIZE-1:0] counter = 'd0;
     logic counter_rst;
 
-=======
->>>>>>> origin/alfonso
     //assign sumVector = '{default:8'b0};
     //assign avgVector = '{default:8'b0}; 
     
@@ -177,7 +174,6 @@ module processing_unit #(parameter NBYTES = 1024)(
                     ready = 1'b1;
                 end
                 else begin // Manhattan distance
-<<<<<<< HEAD
                     if (counter == (COUNTER_MAX-1)) begin
                         vectorC[0] = manDist[7:0];
                         vectorC[(NBYTES2 - 1):1] = '{default:8'b1}; //manDist[(NBYTES2 - 1):0];
@@ -186,11 +182,6 @@ module processing_unit #(parameter NBYTES = 1024)(
                         store = 1'b1;
                         ready = 1'b1;
                     end
-=======
-                    vectorC[0] = manDist[7:0];
-                    vectorC[(NBYTES2 - 1):1] = '{default:8'b1}; //manDist[(NBYTES2 - 1):0];
-                    vectorC[(NBYTES - 1):NBYTES2] = '{default:8'b0};
->>>>>>> origin/alfonso
                 end 
                 // next_state = IDLE; 
                 // store = 1'b1;
