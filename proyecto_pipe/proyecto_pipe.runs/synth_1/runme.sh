@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.runs/synth_1'
+HD_PWD='G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

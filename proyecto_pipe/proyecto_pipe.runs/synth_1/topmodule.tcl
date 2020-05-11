@@ -17,32 +17,36 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/Alfonso/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-41128-Alfonso-PC/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.cache/wt [current_project]
-set_property parent.project_path C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.xpr [current_project]
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_property webtalk.parent_dir {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.cache/wt} [current_project]
+set_property parent.project_path {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.xpr} [current_project]
+set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.cache/ip [current_project]
+set_property ip_output_repo {g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/combo_adder_tree.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/input_interface.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/output_interface.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/pipe_adder_tree.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/piso_reg.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/sipo_reg.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_rx.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_tx.sv
-  C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/input_interface.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/output_interface.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/pipe_adder_tree.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/piso_reg.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/sipo_reg.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_rx.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_tx.sv}
+  {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv}
 }
+read_ip -quiet {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
+
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -51,8 +55,8 @@ read_verilog -library xil_defaultlib -sv {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/Nexys4DDR_MasterLimpio.xdc
-set_property used_in_implementation false [get_files C:/Users/Alfonso/Documents/GitKraken/DigitalAvanzado/Tarea3_FPGA/proyecto_pipe/proyecto_pipe.srcs/Nexys4DDR_MasterLimpio.xdc]
+read_xdc {{G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/Nexys4DDR_MasterLimpio.xdc}}
+set_property used_in_implementation false [get_files {{G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/Nexys4DDR_MasterLimpio.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
