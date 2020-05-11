@@ -114,10 +114,10 @@ module processing_unit #(parameter NBYTES = 1024)(
         .out(manDist2)
         );
         
-    combo_adder_tree #(.NBYTES(NBYTES)) combo_adder (
-        .inVector(difVector),
-        .out(manDist)
-        );
+    // combo_adder_tree #(.NBYTES(NBYTES)) combo_adder (
+    //     .inVector(difVector),
+    //     .out(manDist)
+    //     );
     
     always_comb begin
         next_state = state;
@@ -151,8 +151,7 @@ module processing_unit #(parameter NBYTES = 1024)(
                 end
                 else begin // Manhattan distance
                     if (counter == (COUNTER_MAX-1)) begin
-                        vectorC[0] = manDist[7:0];
-                        vectorC[(NBYTES2 - 1):1] = '{default:8'b1}; //manDist[(NBYTES2 - 1):0];
+                        vectorC[(NBYTES2 - 1):0] = manDist2[(NBYTES2 - 1):0];
                         vectorC[(NBYTES - 1):NBYTES2] = '{default:8'b0};
                         next_state = IDLE; 
                         store = 1'b1;
