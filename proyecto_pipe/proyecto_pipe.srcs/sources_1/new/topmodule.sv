@@ -31,6 +31,18 @@ module topmodule(
     output JA2
     );
     
+
+    clk_wiz_0 main_clk(
+        // Clock out ports
+        .clk_out1(clk),     // output clk_out1
+        // Status and control signals
+        .reset(reset), // input reset
+        .locked(),       // output locked
+        // Clock in ports
+        .clk_in1(CLK100MHZ)// input clk_in1
+    );  
+
+
     localparam NBYTES = 32;
     logic [1:0] vec_ready;
     
@@ -343,8 +355,8 @@ module topmodule(
     */
     
     logic serCLK, proCLK, reset;
-    assign proCLK = CLK100MHZ; //CLK;
-    assign serCLK = CLK100MHZ; //CLK;
+    assign proCLK = clk; //CLK;
+    assign serCLK = clk; //CLK;
     assign reset = ~CPU_RESETN; //RESET;
     
     logic shiftA, shiftB;
