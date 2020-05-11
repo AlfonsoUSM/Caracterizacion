@@ -85,7 +85,6 @@ module processing_unit #(parameter NBYTES = 1024)(
     end
 
     //Counter FF
-    logic
     always_ff @ (posedge clk) begin
         if ((reset == 1'b1)||(counter_rst)) begin
             counter <= 1'd0;
