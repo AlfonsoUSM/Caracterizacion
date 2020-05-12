@@ -152,7 +152,7 @@ module processing_unit #(parameter NBYTES = 1024)(
                     if (counter == (COUNTER_MAX-1)) begin
                         vectorC[0] = manDist2[7:0];
                         vectorC[1] = manDist2[15:8];
-                        vectorC[2] = 8'b0;
+                        vectorC[2] = {6'd0,manDist2[17:16]};
                         vectorC[(NBYTES - 1):NBYTES2] = '{default:8'b0};
                         next_state = IDLE; 
                         store = 1'b1;

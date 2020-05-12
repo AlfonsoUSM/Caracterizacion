@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -42,7 +42,7 @@ read_verilog -library xil_defaultlib -sv {
   {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_tx.sv}
   {G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv}
 }
-read_ip -quiet {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+read_ip -quiet {{G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
 set_property used_in_implementation false [get_files -all {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]

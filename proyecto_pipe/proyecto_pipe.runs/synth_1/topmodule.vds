@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon May 11 11:20:31 2020
-# Process ID: 2440
+# Start of session at: Mon May 11 21:34:57 2020
+# Process ID: 8364
 # Current directory: G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1
 # Command line: vivado.exe -log topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
 # Log file: G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1/topmodule.vds
@@ -16,15 +16,15 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17424 
+INFO: Helper process launched with PID 21428 
 WARNING: [Synth 8-992] reset is already implicitly declared earlier [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv:357]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 751.707 ; gain = 182.480
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 752.496 ; gain = 182.707
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'topmodule' [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv:23]
 	Parameter NBYTES bound to: 1024 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1/.Xil/Vivado-2440-Corsacfox/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1/.Xil/Vivado-2440-Corsacfox/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1/.Xil/Vivado-8364-Corsacfox/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1/.Xil/Vivado-8364-Corsacfox/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'input_interface' [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/input_interface.sv:40]
 	Parameter NBYTES bound to: 1024 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'uart_rx' [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/uart_rx.sv:40]
@@ -71,7 +71,7 @@ INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (8#1) [G:/Mi unidad/UTFS
 INFO: [Synth 8-6155] done synthesizing module 'output_interface' (9#1) [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/output_interface.sv:37]
 INFO: [Synth 8-6155] done synthesizing module 'topmodule' (10#1) [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/topmodule.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1136.379 ; gain = 567.152
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1137.266 ; gain = 567.477
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -84,10 +84,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1136.379 ; gain = 567.152
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1137.266 ; gain = 567.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1136.379 ; gain = 567.152
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1137.266 ; gain = 567.477
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -101,13 +101,13 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/topmodule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1345.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1343.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1345.566 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.278 . Memory (MB): peak = 1343.137 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 1345.566 ; gain = 776.340
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:01:04 . Memory (MB): peak = 1343.137 ; gain = 773.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -115,7 +115,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:01:00 . Memory (MB): peak = 1345.566 ; gain = 776.340
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:01:04 . Memory (MB): peak = 1343.137 ; gain = 773.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -124,6 +124,582 @@ Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {g:/
 Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {g:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
 Applied set_property DONT_TOUCH = true for main_clk. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:00 . Memory (MB): peak = 1345.566 ; gain = 776.340
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:04 . Memory (MB): peak = 1343.137 ; gain = 773.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'input_interface'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.srcs/sources_1/new/processing_unit.sv:102]
+INFO: [Common 17-14] Message 'Synth 8-5818' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'output_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   STORE |                               01 |                               01
+                 PROCESS |                               10 |                               10
+                    SEND |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'input_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                              000 |                              000
+          s_TX_START_BIT |                              001 |                              001
+          s_TX_DATA_BITS |                              010 |                              010
+           s_TX_STOP_BIT |                              011 |                              011
+               s_CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    SEND |                              010 |                               01
+                   TWAIT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'output_interface'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:02:08 . Memory (MB): peak = 1343.137 ; gain = 773.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |pipe_adder_tree__GB0   |           1|     15421|
+|2     |pipe_adder_tree__GB1   |           1|      3883|
+|3     |pipe_adder_tree__GB2   |           1|      5383|
+|4     |pipe_adder_tree__GB3   |           1|      6623|
+|5     |pipe_adder_tree__GB4   |           1|      8547|
+|6     |processing_unit__GCB0  |           1|     16674|
+|7     |processing_unit__GCB1  |           1|     16626|
+|8     |processing_unit__GCB2  |           1|      8476|
+|9     |processing_unit__GCB3  |           1|     21444|
+|10    |processing_unit__GCB4  |           1|      5523|
+|11    |processing_unit__GCB5  |           1|      6971|
+|12    |processing_unit__GCB6  |           1|      7791|
+|13    |processing_unit__GCB7  |           1|     24706|
+|14    |processing_unit__GCB8  |           1|      6274|
+|15    |processing_unit__GCB9  |           1|      8195|
+|16    |processing_unit__GCB10 |           1|     10442|
+|17    |processing_unit__GCB11 |           1|     17050|
+|18    |processing_unit__GCB12 |           1|     16837|
+|19    |topmodule__GC0         |           1|     33552|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     15 Bit       Adders := 8     
+	   2 Input     14 Bit       Adders := 16    
+	   2 Input     13 Bit       Adders := 32    
+	   2 Input     12 Bit       Adders := 64    
+	   2 Input     11 Bit       Adders := 128   
+	   2 Input     10 Bit       Adders := 258   
+	   2 Input      9 Bit       Adders := 512   
+	   3 Input      8 Bit       Adders := 1024  
+	   2 Input      8 Bit       Adders := 1025  
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               15 Bit    Registers := 8     
+	               14 Bit    Registers := 16    
+	               13 Bit    Registers := 32    
+	               12 Bit    Registers := 64    
+	               11 Bit    Registers := 128   
+	               10 Bit    Registers := 258   
+	                9 Bit    Registers := 512   
+	                8 Bit    Registers := 3076  
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5123  
+	   4 Input      8 Bit        Muxes := 1024  
+	   6 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	   5 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pipe_adder_tree 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     15 Bit       Adders := 8     
+	   2 Input     14 Bit       Adders := 16    
+	   2 Input     13 Bit       Adders := 32    
+	   2 Input     12 Bit       Adders := 64    
+	   2 Input     11 Bit       Adders := 128   
+	   2 Input     10 Bit       Adders := 256   
+	   2 Input      9 Bit       Adders := 512   
++---Registers : 
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               15 Bit    Registers := 8     
+	               14 Bit    Registers := 16    
+	               13 Bit    Registers := 32    
+	               12 Bit    Registers := 64    
+	               11 Bit    Registers := 128   
+	               10 Bit    Registers := 256   
+	                9 Bit    Registers := 512   
+Module processing_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1024  
+	   2 Input      8 Bit       Adders := 1024  
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4098  
+	   4 Input      8 Bit        Muxes := 1024  
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module input_interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module sipo_reg__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1024  
+Module sipo_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1024  
+Module piso_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1024  
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 8     
+Module output_interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:24 ; elapsed = 00:04:53 . Memory (MB): peak = 1343.137 ; gain = 773.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |pipe_adder_tree__GB0   |           1|      8721|
+|2     |pipe_adder_tree__GB1   |           1|      2198|
+|3     |pipe_adder_tree__GB2   |           1|      3053|
+|4     |pipe_adder_tree__GB3   |           1|      3743|
+|5     |pipe_adder_tree__GB4   |           1|      4837|
+|6     |processing_unit__GCB0  |           1|     15647|
+|7     |processing_unit__GCB1  |           1|     15606|
+|8     |processing_unit__GCB2  |           1|      5772|
+|9     |processing_unit__GCB3  |           1|     20154|
+|10    |processing_unit__GCB4  |           1|      3779|
+|11    |processing_unit__GCB5  |           1|      4759|
+|12    |processing_unit__GCB6  |           1|      7261|
+|13    |processing_unit__GCB7  |           1|     23206|
+|14    |processing_unit__GCB8  |           1|      4310|
+|15    |processing_unit__GCB9  |           1|      5555|
+|16    |processing_unit__GCB10 |           1|      7000|
+|17    |processing_unit__GCB11 |           1|     15950|
+|18    |processing_unit__GCB12 |           1|     15800|
+|19    |topmodule__GC0         |           1|     49604|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'main_clk/clk_out1' to pin 'main_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:37 ; elapsed = 00:05:09 . Memory (MB): peak = 1343.137 ; gain = 773.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:46 ; elapsed = 00:08:23 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |pipe_adder_tree__GB1   |           1|      2198|
+|2     |pipe_adder_tree__GB2   |           1|      3053|
+|3     |pipe_adder_tree__GB3   |           1|      3743|
+|4     |pipe_adder_tree__GB4   |           1|      4837|
+|5     |processing_unit__GCB0  |           1|     15647|
+|6     |processing_unit__GCB1  |           1|     15606|
+|7     |processing_unit__GCB2  |           1|      5772|
+|8     |processing_unit__GCB4  |           1|      3779|
+|9     |processing_unit__GCB5  |           1|      4759|
+|10    |processing_unit__GCB6  |           1|      7261|
+|11    |processing_unit__GCB8  |           1|      4310|
+|12    |processing_unit__GCB9  |           1|      5555|
+|13    |processing_unit__GCB10 |           1|      7000|
+|14    |processing_unit__GCB11 |           1|     15950|
+|15    |processing_unit__GCB12 |           1|     15800|
+|16    |piso_reg               |           1|     32769|
+|17    |topmodule_GT0          |           1|      9769|
+|18    |topmodule_GT1          |           1|      9781|
+|19    |topmodule_GT2          |           1|     24001|
+|20    |topmodule_GT3          |           1|     25363|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:08:35 ; elapsed = 00:09:20 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |pipe_adder_tree__GB1   |           1|      2198|
+|2     |pipe_adder_tree__GB2   |           1|      3053|
+|3     |pipe_adder_tree__GB3   |           1|      3743|
+|4     |pipe_adder_tree__GB4   |           1|      4837|
+|5     |processing_unit__GCB0  |           1|      5320|
+|6     |processing_unit__GCB1  |           1|      5304|
+|7     |processing_unit__GCB2  |           1|      2653|
+|8     |processing_unit__GCB4  |           1|      1756|
+|9     |processing_unit__GCB5  |           1|      2236|
+|10    |processing_unit__GCB6  |           1|      2332|
+|11    |processing_unit__GCB8  |           1|      1979|
+|12    |processing_unit__GCB9  |           1|      2604|
+|13    |processing_unit__GCB10 |           1|      3331|
+|14    |processing_unit__GCB11 |           1|      5280|
+|15    |processing_unit__GCB12 |           1|      5372|
+|16    |piso_reg               |           1|     16385|
+|17    |topmodule_GT0          |           1|      9528|
+|18    |topmodule_GT1          |           1|      9781|
+|19    |topmodule_GT2          |           1|     10757|
+|20    |topmodule_GT3          |           1|     10085|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:08:51 ; elapsed = 00:09:41 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:52 ; elapsed = 00:09:42 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:12 ; elapsed = 00:10:02 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:13 ; elapsed = 00:10:03 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:31 ; elapsed = 00:10:21 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:32 ; elapsed = 00:10:22 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |  8248|
+|3     |LUT1      |     5|
+|4     |LUT2      | 25623|
+|5     |LUT3      |  7736|
+|6     |LUT4      | 11037|
+|7     |LUT5      |  5510|
+|8     |LUT6      |  7874|
+|9     |FDRE      | 34900|
+|10    |FDSE      |     1|
+|11    |IBUF      |     2|
+|12    |OBUF      |     5|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+-----------------+-------+
+|      |Instance          |Module           |Cells  |
++------+------------------+-----------------+-------+
+|1     |top               |                 | 100943|
+|2     |  coprocessor     |processing_unit  |  24573|
+|3     |    pipe_adder    |pipe_adder_tree  |  19105|
+|4     |  input_instance  |input_interface  |   6768|
+|5     |    instance_name |uart_rx          |    103|
+|6     |  output_instance |output_interface |     83|
+|7     |    instance_name |uart_tx          |     54|
+|8     |  vectA_sipo      |sipo_reg         |  39707|
+|9     |  vectB_sipo      |sipo_reg_0       |  21611|
+|10    |  vectC_piso      |piso_reg         |   8192|
++------+------------------+-----------------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:32 ; elapsed = 00:10:22 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:46 ; elapsed = 00:10:07 . Memory (MB): peak = 1805.965 ; gain = 1030.305
+Synthesis Optimization Complete : Time (s): cpu = 00:09:32 ; elapsed = 00:10:25 . Memory (MB): peak = 1805.965 ; gain = 1236.176
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8248 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1805.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:10:07 ; elapsed = 00:11:04 . Memory (MB): peak = 1805.965 ; gain = 1495.598
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1805.965 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/Mi unidad/UTFSM/IPD432 - Diseo Avanzado de Sistemas Digitales/git/Caracterizacion/proyecto_pipe/proyecto_pipe.runs/synth_1/topmodule.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1805.965 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file topmodule_utilization_synth.rpt -pb topmodule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 11 21:46:37 2020...

@@ -1,0 +1,93 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon May 11 21:52:08 2020
+| Host         : Corsacfox running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file topmodule_control_sets_placed.rpt
+| Design       : topmodule
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |           10290 |         3165 |
+| Yes          | No                    | No                     |               2 |            1 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |           24687 |         9422 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+-----------------------------------------------------------+-----------------------------------+------------------+----------------+
+|       Clock Signal      |                       Enable Signal                       |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-------------------------+-----------------------------------------------------------+-----------------------------------+------------------+----------------+
+|  main_clk/inst/clk_out1 | input_instance/instance_name/E[0]                         | coprocessor/pipe_adder/SR_BUFG[0] |                1 |              1 |
+|  main_clk/inst/clk_out1 | input_instance/instance_name/E[1]                         | coprocessor/pipe_adder/SR_BUFG[0] |                1 |              1 |
+|  main_clk/inst/clk_out1 |                                                           |                                   |                1 |              2 |
+|  main_clk/inst/clk_out1 | output_instance/instance_name/Tx_Serial_i_1_n_0           |                                   |                1 |              2 |
+|  main_clk/inst/clk_out1 |                                                           | coprocessor/counter[3]_i_1_n_0    |                2 |              4 |
+|  main_clk/inst/clk_out1 | output_instance/instance_name/r_Clock_Count[6]_i_1__0_n_0 | coprocessor/pipe_adder/SR_BUFG[0] |                2 |              7 |
+|  main_clk/inst/clk_out1 | input_instance/instance_name/r_Clock_Count[7]_i_1_n_0     | coprocessor/pipe_adder/SR_BUFG[0] |                3 |              8 |
+|  main_clk/inst/clk_out1 | output_instance/instance_name/r_Tx_Data_0                 | coprocessor/pipe_adder/SR_BUFG[0] |                2 |              8 |
+|  main_clk/inst/clk_out1 | input_instance/instance_name/next_count                   | coprocessor/pipe_adder/SR_BUFG[0] |                3 |             10 |
+|  main_clk/inst/clk_out1 | output_instance/instance_name/E[0]                        | coprocessor/pipe_adder/SR_BUFG[0] |                3 |             10 |
+|  main_clk/inst/clk_out1 | input_instance/instance_name/next_pro_control             | coprocessor/pipe_adder/SR_BUFG[0] |               36 |             66 |
+|  main_clk/inst/clk_out1 | input_instance/instance_name/shiftA                       | coprocessor/pipe_adder/SR_BUFG[0] |             2851 |           8192 |
+|  main_clk/inst/clk_out1 | input_instance/instance_name/shiftB                       | coprocessor/pipe_adder/SR_BUFG[0] |             2882 |           8192 |
+|  main_clk/inst/clk_out1 | coprocessor/E[0]                                          | coprocessor/pipe_adder/SR_BUFG[0] |             3638 |           8192 |
+|  main_clk/inst/clk_out1 |                                                           | coprocessor/pipe_adder/SR_BUFG[0] |             3163 |          10286 |
++-------------------------+-----------------------------------------------------------+-----------------------------------+------------------+----------------+
+
+
