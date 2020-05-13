@@ -31,7 +31,7 @@ module topmodule(
     output JA2
     );
     
-    localparam NBYTES = 12;
+    localparam NBYTES = 1024;
     logic [1:0] vec_ready;
     
     assign JA1 = UART_TXD_IN;
