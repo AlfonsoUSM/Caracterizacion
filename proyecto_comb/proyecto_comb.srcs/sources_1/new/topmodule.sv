@@ -39,6 +39,17 @@ module topmodule(
     assign LED16_B = vec_ready[0];
     assign LED17_B = vec_ready[1];
     
+    clk_wiz_0 main_clk(
+        // Clock out ports
+        .clk_out1(clk),    // output clk_out1
+        // Status and control signals
+        .reset(reset),          // input reset
+        .locked(locked),        // output locked
+        // Clock in ports
+        .clk_in1(CLK100MHZ)       // input clk_in1
+    );      
+
+
     /*
     // simulacion
     logic CLK, RESET, uart_rx;
@@ -343,8 +354,8 @@ module topmodule(
     */
     
     logic serCLK, proCLK, reset;
-    assign proCLK = CLK100MHZ; //CLK;
-    assign serCLK = CLK100MHZ; //CLK;
+    assign proCLK = clk; //CLK;
+    assign serCLK = clk; //CLK;
     assign reset = ~CPU_RESETN; //RESET;
     
     logic shiftA, shiftB;
